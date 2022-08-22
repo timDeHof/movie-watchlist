@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --icon: url(./assets/add-icon.png);
+    --remove: url(./assets/remove-icon.png);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+/* header */
+.header-container {
+    background-image: url(https://images.unsplash.com/photo-1628432136678-43ff9be34064?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80);
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+    background-position: center 20%;
+    width: 100vw;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: inter;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2.6rem;
+    text-align: left;
+    line-height: 1.6rem;
+    margin: 50px 0;
+}
+.watchlist, .movies {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.watchlist:hover, .watchlist:focus {
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    outline: none;  
+}
+.movies:hover, .movies:focus {
+    border-bottom: 2px solid #DFDDDD;
+}
+.watchlist:visited {
+    color: white;
+}
+
+.movies:visited {
+    color: #DFDDDD;
+}
+/* Searchbar */
+.searchBar {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    outline: none;
+}
+
+form {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: -30px;
+    z-index: 1;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.search {
+    border: 1px solid #D1D5DB;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 0.5em;
+    width: 80%;
+    background-color: #FFF;
+    outline: none;
+}
+
+input[type="text"] {
+    border: none;
+    width: 100%;
+    padding: 9px;
+    outline: none;
+}
+
+#search-btn {
+    padding: 9px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #D1D5DB;
+    background-color: #F9FAFB;
+    width: 20%;
+    color: #374151;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Movies */
+#movies-list, #watchlist {
+    margin: 50px 0;
+    padding: 0 2rem;
+}
+
+.placeholder-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-placeholder {
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.placeholder-container > p {
+    color: #DFDDDD;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #DFDDDD;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    max-width: 1000px;
+}
+
+.poster {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.movie-info {
+    margin-left: 1.5rem;
+    width: 100%;
+}
+
+.movie-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+    margin-bottom: .8rem;
+}
+
+.movie-title > span {
+    margin: 0 1.5rem;
+    font-weight: 300;
+    padding-left: 2px;
+}
+
+.movie-title span::before {
+    content: url(./assets/starRating.png);
+    padding-right: 5px;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+}
+
+.details {
+    font-size: .8rem;
+}
+.details-btn, .remove-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.details-btn::before {
+    content: var(--icon);
+    display: flex;
+    justify-content: center;
+    padding: 0 5px 0;
+}
+.remove-btn::before {
+    content: url(./assets/remove-icon.png);
+    display: flex;
+    justify-content: center;
+    padding: 0 5px 0;
+}
+
+.empty-container{
+    display: flex;
+    
+}
+.empty-text {
+    color: #DFDDDD;
+}

@@ -6,8 +6,13 @@
 }
 
 :root {
-  --icon: url(./assets/add-icon.png);
-  --remove: url(./assets/remove-icon.png);
+    --icon: url(./assets/add-icon.png);
+    --remove: url(./assets/remove-icon.png);
+    --blur: 5px;
+    --spread: -5px;
+    --horiz: 5px;
+    --vert: 5px;
+
 }
 
 html,
@@ -91,7 +96,9 @@ form {
   width: 100%;
   top: -30px;
   z-index: 1;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: calc(clamp(0px, var(--horiz), 2px)) calc(clamp(0px, var(--vert), 2px)) 2px calc(var(--spread)) rgba(0, 0, 0, 0.233), calc(2 * var(--horiz)) calc(2 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.20), calc(3 * var(--horiz)) calc(3 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.123), calc(5 * var(--horiz)) calc(5 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.076), calc(8 * var(--horiz)) calc(8 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.047), calc(13 * var(--horiz)) calc(13 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.028);
+  border-radius: 0 5px 5px 0;
+
 }
 
 .search {
@@ -120,8 +127,8 @@ input[type='text'] {
   background-color: #f9fafb;
   width: 20%;
   color: #374151;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 900;
   cursor: pointer;
   outline: none;
 }

@@ -1,15 +1,14 @@
 <h1 align="center">Welcome to movie-watchlist 👋</h1>
 <p align="center">
-Search for movies and make a library of your favorite ones using the OMDb API.</
+Search for movies and make a library of your favorite ones using the OMDb API.
 </p>
 
 ## ✨ Demo
 
 <p align="center">
     <img width='700' align="center" src='assets/MovieWatchlisthomepage.png' alt="homepage"/>
+    <a align="center" href="https://movies-watchlist-solo.netlify.app/">Live Demo</a>
 </p>
-
-[live demo](https://movies-watchlist-solo.netlify.app/)
 
 ## Author
 

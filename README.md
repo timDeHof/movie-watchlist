@@ -21,8 +21,10 @@ Search for movies and make a library of your favorite ones using the OMDb API.
 
 ## Show your support
 
-<p></p>
-Give a ⭐️ if this project helped you!
+<p>
+Give a ⭐️ if you like this project!
+</p>
+
 
 ---
 

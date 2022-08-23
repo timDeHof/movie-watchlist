@@ -11,6 +11,7 @@ Search for movies and make a library of your favorite ones using the OMDb API.
 <p align="center">
     <a align="center" href="https://movies-watchlist-solo.netlify.app/">Live Demo</a>
 </p>
+
 ## Author
 
 👤 **Tim DeHof**

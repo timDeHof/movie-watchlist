@@ -6,8 +6,15 @@ Search for movies and make a library of your favorite ones using the OMDb API.</
 ## ✨ Demo
 
 <p align="center">
-    <img width='700' align="center" src='https://drive.google.com/file/d/1zKO6j1CqhiXo_3SFU2bO4Kh0QPcptsFV/view?usp=sharing' alt="homepage"/>
+    <img width='700' align="center" src='assets/MovieWatchlisthomepage.png' alt="homepage"/>
 </p>
+
+## Author
+
+👤 **Tim DeHof**
+
+- Twitter: [@timdehof](https://twitter.com/timdehof)
+- Github: [@timDeHof](https://github.com/timDeHof)
 
 ## Show your support
 

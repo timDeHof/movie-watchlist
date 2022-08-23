@@ -6,8 +6,10 @@ Search for movies and make a library of your favorite ones using the OMDb API.</
 ## ✨ Demo
 
 <p align="center">
-    <img width='700' align="center" src='assets/MovieWatchlistDemo.gif' alt="homepage"/>
+    <img width='700' align="center" src='assets/MovieWatchlisthomepage.png' alt="homepage"/>
 </p>
+
+[live demo](https://movies-watchlist-solo.netlify.app/)
 
 ## Author
 

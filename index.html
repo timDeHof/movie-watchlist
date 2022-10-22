@@ -1,9 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link href="https://fonts.googleapis.com" rel="preconnect">
 	    <link href="https://fonts.gstatic.com" rel="preconnect">
 	    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Put your description here.">
+        <title>Movie Watchlist</title>
     </head>
     <body>
         <div class="container">
@@ -16,7 +20,7 @@
             <section class="searchBar">
                 <form id="movie-search">
                     <div class="search">
-                        <img src="./assets/search-icon.png" alt="search-icon" class="search-icon">
+                        <img src="./assets/search-icon.png" alt="search-icon" width="16" height="16" class="search-icon">
                         <input id="search-input" type="text" placeholder="Search for a movie"/>    
                     </div>
                     <button id="search-btn" type="submit">Search</button>
@@ -24,7 +28,7 @@
             </section>
             <section id="movies-list">
                 <div class="placeholder-container">
-                    <img src="./assets/no-movies-Icon.png" alt="no-movie-here" class="movie-placeholder">
+                    <img src="./assets/no-movies-Icon.png" width="55" height="55" alt="no-movie-here" class="movie-placeholder">
                     <p>Start Exploring</p>
                 </div>  
             </section>

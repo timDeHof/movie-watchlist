@@ -219,13 +219,13 @@ input[type='text'] {
   content: var(--icon);
   display: flex;
   justify-content: center;
-  padding: 0 5px 0;
+  padding: 0 5px;
 }
 .remove-btn::before {
   content: url(./assets/remove-icon.png);
   display: flex;
   justify-content: center;
-  padding: 0 5px 0;
+  padding: 0 5px;
 }
 
 .empty-container {
